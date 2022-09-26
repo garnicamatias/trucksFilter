@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+  } 
+
+body{
+    background-color: #000000;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg %3E%3Cpolygon fill='%23220000' points='1600 160 0 460 0 350 1600 50'/%3E%3Cpolygon fill='%23440000' points='1600 260 0 560 0 450 1600 150'/%3E%3Cpolygon fill='%23660000' points='1600 360 0 660 0 550 1600 250'/%3E%3Cpolygon fill='%23880000' points='1600 460 0 760 0 650 1600 350'/%3E%3Cpolygon fill='%23A00' points='1600 800 0 800 0 750 1600 450'/%3E%3C/g%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100vh;
+    padding: 50px;
+}
+
+
+main {
+    display: flex;
+    height: 100%;
+}
+
+.formContainer {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.formContainer > form{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+select {
+    width: 300px;
+    height: 30px;
+
+}
+
+.formContainer button {
+    width: 300px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: whitesmoke;
+    font-weight: bold;
+    font-size: 16px;
+    transition: all 0.5s ease;
+}
+
+#btnFilterBrand:hover, #btnFilterColor:hover{
+    background-color: gray;
+    color: whitesmoke;
+    box-shadow: 1px 9px 17px 0px rgba(0, 0, 0, 0.7);
+} 
+
+#btnShowAll, #btnFilterBoth{
+    background-color: gray;
+    color: whitesmoke;
+    transition: all 0.5s ease;
+}
+
+#btnShowAll:hover, #btnFilterBoth:hover {
+    background-color: whitesmoke;
+    color: black;
+    box-shadow: 1px 9px 17px 0px rgba(0, 0, 0, 0.7);
+}
+
+.cardsContainer {
+    width: 70%;
+}
+
+.cardsContainer img{
+    max-width: 90%;
+} 
+
+.cardSubtitles {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 20px;
+}
+
+#truckAmarillo {
+    width: 100%;
+    height: 15px;
+    background-color: yellow;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+#truckRojo {
+    width: 100%;
+    height: 15px;
+    background-color: red;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+#truckGris {
+    width: 100%;
+    height: 15px;
+    background-color: grey;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+#truckBlanco {
+    width: 100%;
+    height: 15px;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+#truckAzul {
+    width: 100%;
+    height: 15px;
+    background-color:blue;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+#cardsContainer > div {
+    width: 200px;
+    height: 200px;
+    border-radius: 15px;
+    border: 2px solid black;
+    padding: 10px;
+    box-shadow: 1px 9px 17px 0px rgba(0, 0, 0, 0.7);
+    background-color: #d9d9d9;
+}
+
+.logoContainer{
+    display: flex;
+    justify-content: center;
+    height: 30%;
+}
+
+.logoContainer > img {
+    background-size: cover;
+}
+
+#cardsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width: 1100px){
+    
+    main {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .formContainer{
+        width: 100%;
+    }
+
+    .cardsContainer{
+        width: 100%;
+    }
+
+  }

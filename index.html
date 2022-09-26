@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Lo camione</title>
+  </head>
+  <body>
+    <main>
+      <section id="formContainer" class="formContainer">
+        <form id="truckConsult">
+          <div class="brandSelector">
+            <select name="brand" id="brand">
+              <option disabled selected>Elegí una marca...</option>
+              <option value="Chevrolet">Chevrolet</option>
+              <option value="Ford">Ford</option>
+              <option value="Iveco">Iveco</option>
+              <option value="Mercedes Benz">Mercedes</option>
+              <option value="Scania">Scania</option>
+            </select>
+            <div class="btnFilterBrandContainer">
+              <button id="btnFilterBrand">Filtrar por Marca</button>
+            </div>
+          </div>
+          <div class="colorSelector">
+            <select name="color" id="color">
+              <option disabled selected>Elegí un color...</option>
+              <option value="Amarillo">Amarillo</option>
+              <option value="Azul">Azul</option>
+              <option value="Blanco">Blanco</option>
+              <option value="Gris">Gris</option>
+              <option value="Rojo">Rojo</option>
+            </select>
+            <div class="btnFilterColorContainer">
+              <button id="btnFilterColor">Filtrar por Color</button>
+            </div>
+          </div>
+          <div class="submitContainer">
+            <button type="submit" id="btnFilterBoth">Filtrar por Marca y Color</button>
+          </div>
+          <div class="showAllContainer">
+            <button id="btnShowAll">Mostrar todo</button>
+          </div>
+        </form>
+      </section>
+      <section id="cardsContainer" class="cardsContainer"></section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
